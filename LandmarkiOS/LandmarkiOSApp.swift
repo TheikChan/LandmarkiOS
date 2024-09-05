@@ -25,7 +25,7 @@ struct LandmarkiOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandmarkList(landmarkViewModel: LandmarkViewModel(landmarks: Landmark.landmarks) )
         }
         .modelContainer(sharedModelContainer)
     }
